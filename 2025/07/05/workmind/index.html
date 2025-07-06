@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>我最近差的状态 | Tottering front-end</title><meta name="author" content="chen bo"><meta name="copyright" content="chen bo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我最近差的状态">
+<meta property="og:url" content="http://example.com/2025/07/05/workmind/index.html">
+<meta property="og:site_name" content="Tottering front-end">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avatar.jpeg">
+<meta property="article:published_time" content="2025-07-05T01:08:50.000Z">
+<meta property="article:modified_time" content="2025-07-06T08:42:31.719Z">
+<meta property="article:author" content="chen bo">
+<meta property="article:tag" content="心得">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar.jpeg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "我最近差的状态",
+  "url": "http://example.com/2025/07/05/workmind/",
+  "image": "http://example.com/img/avatar.jpeg",
+  "datePublished": "2025-07-05T01:08:50.000Z",
+  "dateModified": "2025-07-06T08:42:31.719Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "chen bo",
+      "url": "http://example.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/07/05/workmind/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '我最近差的状态',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/galleryGroup/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-heart"></i><span> 说说</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/indexTopImage.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Tottering front-end</span></a><a class="nav-page-title" href="/"><span class="site-name">我最近差的状态</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/galleryGroup/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-heart"></i><span> 说说</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">我最近差的状态</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-05T01:08:50.000Z" title="发表于 2025-07-05 09:08:50">2025-07-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-06T08:42:31.719Z" title="更新于 2025-07-06 16:42:31">2025-07-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="310545e3109650986e8eda35836695b6e74e9788be1cf9d2cd523fd39bb8dac1">f9c2208cd4ca51d1f50de646049a6192271d9812a1d8d5e31782dfb0f33abd5eb404aee38aac1e6f45831a602030aae746e6b3243eb5d379c3d4061c8bd27026fe72f6fecff75fcb0696444e03b53a3eda8e9646d98f0ebc3ff7cf1a9c6cc6e3f0f80af57981500c057e29a984fc16d6656160e51a4468888852600873abbf1ccd63babaa7296c6c48691e11dade9ec95d6588b3d7a931f4f2194fdb21fa46f35f1f47437412db4506ece84ca3540ae0b850a712dba8a5f929a21a9c392d2839228357b0d71bd336d9680e0986cf10878d9a1ecafabdb3c6fa2dc28fa102ec33c550ba92f326f8cea713fc9edcdd73fe38a5156e060e82717a44fd0cbe962998110504d79ee72e5c69c399458410ac0d3991f227ec80976b0ffb17d95a35d1e9be6cf95a82e399ca74775c602ff269f07fece9adcb0e4f291efd64c3039f8e3aa6016fab4e598a82cd444ec52540dc4c7069578fe2d9aa7331f4b11864cdf5f8ca8b153503c1f23b6ca8a32c1c5767310966b33552fe6e4f892cf6066a2d1b198480f302449342790884d032981565d60e2c5da980e8257c4e07caf95bef0c3cd17454ec1f9518a74b304d950eca33b3b275e0029af1a9d1ca9c769175dd315e040ac8bb7b32b231ec0559b824293a7c7a852237678722470c1cc17c6090717365f4ee71288721649cbd81a83a53739c76db7e0f104b92784b95a0085b185f70f2df69ca66634294154ef789c19d8984b784c022a1c464e7de3255ef0ba5290848888da5aa932ddf29e57f05abcac31dbeaa77bbc2a7e515b53b73e17f0ad9a46b40d693f96fb29769f954944f212aa1a603b6666a1f3f6ec50ce544bd8d08ea35d40948d00ded3572ad93efdccf4507a484e4e6ed8252a960172349663ad9065f21be0fc550367c9a65d46c91cef2565b741d92e9bfdd92fc6a1ada7fa26f7afca0cc26a5d1abb2104b51d2fc2ec1bcc6ae558a3be640c44cfd1265ef53bc89d045243131e525066af5c058960cd8d424cd3831cc96cae4e187eba0bca8235003d356959622bbc71cc26175b4d222597cb11563f4809c5718ab149e60950b3adb312a3974a9541addf7acf7438fe0c88cc79bfa339ca041380746d16e9836dfd6c913109095c3a11a000ce4236e076b3d7874a0f842412d6c31ac527df938b46a0e594dcaaf1322903d3d969e4a095230bcf6c7bec48078471e5d8c6e908444c208a2620ba0f868c5b34b4124218d9a1b261bd761866aefb74a0ccd3468b9b70fb45362aa3abd867bf2656fc6965c93e54d1eab0b464c2776421449906196dc85790e566f92306aba57639a9163efdff7c00e910a31e7fd7c8b0fb15f1e4a6bea7f336a6b294fdc95dc3023916f1d3f1fba8dece66f8d091c121ee0755599a0aa123d8c27ba40fc060f92c8793590eaa975b2a7e252b56f264850ca0ce87d0309667cb2600a9d9f0ddf4162135073c9b3d9c046e039e9404e3ffc7d563932255a3ad1694f920dc01e9aed87b45b75356034776ddcdcef82eb18e37b9475e3f9d6f83a37621b3cf3ee7207e99eab25f84dac95c833467e9ad3bf99b420a4c9fa2497813843121f1c09797df67d3e4057b8ebc5ba87d3fe2e7a517db3b75c5865f690fe722416b658b6b6642cea738ff729f0dcbea659e41bebc23fc08866cd2923e20cc24e59ddc41bbde261e72c9b6ac6eb57cb58771a441ef6f59e583866fa9578fdd237a2a845202c6e9e069af36d505e89496903dbd3bf2a7a80d8feaacb532d19f5c7435872e6e9037981bc8fb7cd5e178b5771bfe9ae9b9c268c0a96f9d8157119693fca6a3cdb024cb677f23f4e70b0b78371d320b0c929983eaba5354fbf1f3072ad16b66b6c5f70d74f8ddbc18703fe17d11434d6b2647a40d01330f8fef99c6e29ad878f8735611c0c4f27e93bb396e70fe9cb51c5e54c7bbd49fd5fa266d60a202777fd682851a1d8a4c02b967f470254a6e87147f6223c333cbe4402f32ec98881ac90dd1319ac8596f49f11451d7a8c285796a476a8817e8e91cc923431a693e02195b2705b2248767ac143084442ca98598a25d273e69f4b2775b9eb03c1e8e0fb92c8bf793ebeadc84cb4aca3a28f9d884cd73f999b2300f48fd7035cf5d4e7f6add8db41f13c23daf1854769210277a15cbe0eae0b479ed7957fa68364e52d009233f038c1b14ea2013618f3bf585838c8ccc8dff4e899ecd5128c837c361f6672f02b1b1c742a32c35af54ee9debe9e0d4d1612faf38bc461e8228c6da438b2bf868616ca8ad60038cf9fbdd82acecc0eac8afa9a15ed06a82753c725c17aee6d5fd362a9567c4e2fae6713182d815eec576d24c3a3029ff17a71b03ffc254c9c41c7aba8957502aa0b4ae8fa4676b8dd9e51a73a06bd5d38c91f341dd6d5636a8a31f4e3aa7652b5c20d67a3b3a417acbea17340a382abbbdaa9f722586439441fdfe9d11d3b85af96434e8310e047d36dd17a122808ee5e1c8188642a107ab10d55a0e981cca7e2a8f1bfee5c7daa2677ad744e731717798af8f0c0efec41a919a8743e336cf5556752bc7eba476f33aae2750468122e8b991de0c5fc1848abccdbf58b2cbbefa983c88d9c5347bc9814d08e550ffa90f9824da482e8c3bad4e886abbcbdafbd7f246f5920d7fed6804889cc6e1a019d562dc8a726fcea743847905720ea536b135d4f9756fd13ea8e69aad1a173ccb77450cc43e79d88518f071c9c4276d1e2f0fc4613fb3321bbf3adab903c69c2554892934f86b4d1264e10afb7d78cca80e2beb81a35b9a71a60832214fe441b08bbb08a1ee5dbf2a3498a01381b555886a2984b9fda1ac8c0a48c518960ae77647b76163be22364c636f800583dcf0b8d6efe415a9a36c0351dd651a0b849cbfbe2e4856af76e93616347706f0a27e14b20d2d4e13f84344e2cac96cd36d0859d10d53f157dfe200144567ecd96f9a56d76beb049e37c9480fc4bead83a92c03921ebed426d55d1a1b682ec0ef1e225345dce3b229d464903115447f8651e1db92aaf5ee2c4f4da2d478279c182080040550af4d264403509f6c44986d6544a8b4671758dda9489c03b51c5c2f7b8632e0b51057c0ec9fe48a1a111abd6d94ec45e05b28ea6efa479d8fb07835641ec7984860f117dcdadc8ccfcc3f452df755b24dc8f42eb023849e7049021e8decbaa61afdb4eb04b016ef35471e85442507c7dc40f5d82ec5fbe9c4b2d47e2a9d374d8048baaeab27830390fab411eebf19012d25020e32b0a2947e00240f3f599ab6d77854036acde1629cefd93a3f19a936e6bdb55ea339c0a05cedc36d55f8f1dbcef47db9d06ae2a2447e403a6f4e2a83d5f23b7378b1b1a79b4bcf87f1b970d5a536ccac326c375e0a903b4d415c335fe2838e2006945e6fe139c8eb65b5e6a7312d04a1833775adc09a9a3845ae01a4bc1c173926708fa2e14fdf8da94c004712b240bfc61e651e63b725002524ec88301385cfd1871b2e485b5e282f3f43a3e9d648bae4adfeaa2f7bc471e501a85acce520c2937c8d0f1d3d61d26140c2f28f43b6692056287da690fcc9433bc94ce0ae5c49df975c66eb5f34b3090aac1388f190343f71a1c520aa73692ac47edb5513f4d78248b74ec7b4ac808d181aa5df3195a529d23edde2dede5bc5f93ef10716175f057bb8b11a41d41be0b83e8e5e98d6424aed9328c19dd6c13d3f81e19eb4bf4071c8f82725b325d906b4b21de5eb72cc1499e11d2a475ec9a2ac7f16f3fe0171f2f6420ec8dadb9add85047cd29d884306089db7acd0cef6c53520a79c678a55e37de340ababa8682c6dc252a7e147df7a396a8a604b05b4702fec92f10517f31993a1894af4b7e1c7ed7ef7bcbde3b6fcb48e7732517f6deadf385720af2ae1085a089c5bd9ee4c9e6e80c7979a27835357a27fc57290618cad2c4e01fe9ae17780c33fc03d80e5e4b93ba0a9294bd53ee69afbde5d67e4cd995fd5b0506f383996ef3c82832d938f86059717176bc2be8c3f8dd7c84989aa844fe94acdaea28f0e364a645b202fd26c156377e802e255ee1f215a0af8cdaa2b09b4dae22059815f1e8c7748034c2e7d128e85b790cc5b428cb4bc12fd13369abba21a37856cf8ccb6157901501984f265fb64e63ea019b8dfb809b6f7c556d1a30f440d15fae8ea78639609d83f5aeb813fdf509064a137401488a885492ca604d34adcc358fd2fbc2a4bae3b3b620d524bdab853bfe73b51be83751c3ae37a9dce3fa5c1c9387ecf7fca56efd746b57a2000fefe14cd83f2a34a68c8ad8e0900480a69cb09d8d6fd193f18ee3200205bb19428c7b2e7736cb4036e26754c7f4f3854e60472d5cce8735ced4a87fa01ecd19126b43aa8ee506d56ba453d01d975dfd999230817e48db3b9be8151cd46d42d3e27998e604691c0299854d8e20804330b1b6749337dc682663491bb65b1e61fedf4a5746cfd21405f405cf2eb1cc1e810236cc7bbc783be7809c0a23276ca5a3dc4e2f03f118ad6d3347bd98a1b6b1355f3f181ed77ebfe3fb3d60d0e46f4e9217bf02f031f49ab83faff26402517c497a51bd90cdb4c77101f2f42000e91f078b7a93dd3d488a8b0ad7881265c406f481ba9e3fbb7777439a3d227bf85c45eac5f0f8af671e952d05edb7577871fb</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">chen bo</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/07/05/workmind/">http://example.com/2025/07/05/workmind/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">Tottering front-end</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%BF%83%E5%BE%97/">心得</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/07/06/learingHexo/" title="学习 hexo butterfly 配置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">学习 hexo butterfly 配置</div></div><div class="info-2"><div class="info-item-1">Hexo 学习 hexo butterfly 配置hexo 博客基本布局如下：包括 顶部、侧边栏、文章列表、导航、底部；  hexo 文章类别 hexo new [layout] &lt;name&gt; #新建文章    布局类型 命令 保存位置 用途 特点    Post（文章） hexo new post &lt;标题&gt; 或 hexo new &lt;标题&gt; source&#x2F;_posts&#x2F; 用于创建博客文章，最常用类型 - 显示在博客首页文章列表- 包含日期、分类、标签等元数据- 归档到时间线中   Page（页面） hexo new page &lt;标题&gt; source&#x2F;&lt;标题&gt;&#x2F;index.md 创建独立页面，如”关于我”、”联系方式”等 - 不显示在文章列表中- 用于创建导航菜单独立页面- 无日期、分类、标签等属性   Draft（草稿） hexo new draft &lt;标题&gt; source&#x2F;_drafts&#x2F; 创建未完成或暂不发布的文章草稿 - 默认不显示在网站上- ...</div></div></div></a><a class="pagination-related" href="/2025/06/15/read-asyncButton/" title="封装一个异步按钮组件 AsyncButton"><img class="cover" src="/img/1.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">封装一个异步按钮组件 AsyncButton</div></div><div class="info-2"><div class="info-item-1">实现一个异步按钮组件场景：日常开发中按钮 loading 状态一般配合异步函数的调用，这种 button 状态的维护虽然可以，但是如果有很多按钮就需要定义对应的按钮状态，如果是按钮组的话还涉及关联影响的问题；是不是可以实现一个AsyncButton 组件，当传入异步函数的时候自动维护状态呢？ 1234567891011121314151617181920212223242526272829const ExampleButton = () =&gt; &#123;  const [loading, setLoading] = useState(false) // highlight-line  // 异步提交表单数据  const handleSubmit = async (formData) =&gt; &#123;    setLoading(true)    try &#123;      // 模拟异步请求      await new Promise((resolve) =&gt; setTimeout(resolve, 2000))      // 提交表单数据    ...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">chen bo</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/chernbo"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E8%BF%91%E4%BA%8B%E6%83%85"><span class="toc-number">1.</span> <span class="toc-text">最近事情</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E4%B8%8A%E7%9A%84%E7%83%A6%E5%BF%83%E4%BA%8B%E6%83%85"><span class="toc-number">1.1.</span> <span class="toc-text">工作上的烦心事情</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E9%99%85%E5%85%B3%E7%B3%BB%E7%83%A6%E5%BF%83%E4%BA%8B%E6%83%85"><span class="toc-number">1.2.</span> <span class="toc-text">人际关系烦心事情</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/06/learingHexo/" title="学习 hexo butterfly 配置">学习 hexo butterfly 配置</a><time datetime="2025-07-06T07:39:53.000Z" title="发表于 2025-07-06 15:39:53">2025-07-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/05/workmind/" title="我最近差的状态">我最近差的状态</a><time datetime="2025-07-05T01:08:50.000Z" title="发表于 2025-07-05 09:08:50">2025-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/06/15/read-asyncButton/" title="封装一个异步按钮组件 AsyncButton"><img src="/img/1.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="封装一个异步按钮组件 AsyncButton"/></a><div class="content"><a class="title" href="/2025/06/15/read-asyncButton/" title="封装一个异步按钮组件 AsyncButton">封装一个异步按钮组件 AsyncButton</a><time datetime="2025-06-15T07:53:21.000Z" title="发表于 2025-06-15 15:53:21">2025-06-15</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;2021 - 2025 By chen bo</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.0-b2</a></span></div><div class="footer_custom_text"><a href="https://beian.miit.gov.cn" style="color:white" target="_blank"><img src="https://haiyong.site/img/icp.png" style="margin-right: 12px;
+vertical-align: top; padding-top: 3px;"> <span style="line-height: 20px;margin-left: -7px;
+font-size: 14px;">京ICP备2025130313号-1</span></a>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
